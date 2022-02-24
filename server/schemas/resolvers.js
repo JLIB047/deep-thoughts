@@ -14,7 +14,7 @@ const resolvers = {
                 return userData;
             }    
 
-            throw new AuthentucationError('Not logged in');
+            throw new AuthenticationError('Not logged in');
         },
         thoughts: async (parent, { username }) => {
             const params = username ? { username } : {};
